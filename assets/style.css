@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(22, 21, 21);
+    color: white;
+    font-family: 'Poppins',sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background: rgb(18,18,62);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul li{
+    list-style: none;
+    margin: 0 23px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(153,153,226);
+    font-size: 1.2rem;
+}
+.left{
+    font-size: 1.5rem;
+    display: flex;
+}
+.left #logo{
+    margin: 15px 0;
+    width: 30px;
+    height: 30px;
+}
+.left #blg-nm{
+    margin: 15px 2px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftSection{
+    font-size: 3rem;
+}
+
+.rightSection img{
+    max-width: 80%;
+    border: none;
+    border-radius: 90px 40px;
+    outline: 2px solid lightblue;
+}
+.rightSection img:hover{
+    filter: blur(2px);
+    cursor: pointer;
+    box-shadow: 2px 2px gray;
+    transform: scale(1.2,1.2);
+    transition: transform 1s;
+    transition-timing-function: ease-in-out;
+}
+.purple{
+    color: blueviolet;
+    animation-name: first;
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: transform ease-in-out; /*dheere jaao ruko teji se lauto*/
+}
+@keyframes first{
+    0%   {color: red;}
+    25%  {color: blue;}
+    50%  {color: green;}
+    100% {color: blueviolet;}
+}
+#element{
+    color: purple;
+}
+main hr{
+    border: 0;
+    background: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+
+}
+.secondSection h1{
+    font-size: 1.9rem;
+}
+.secondSection{
+    width: 80vw;
+    height: 22vw;
+    margin: 56px 0;
+    display: flex;
+    justify-content: center;
+    align-itmes: center;
+    text-align: justify;
+}
+.secondSection .leftSection-second{
+    width: 62%;
+}
+.leftSection-second h1{
+    font-size: 3rem;
+}
+.leftSection-second p{
+    font-size: 1rem;
+    font-style: italic;
+
+}
+.leftSection-second a{
+    text-decoration: none;
+    color: white;
+}
+.leftSection-second a:hover{
+    border: 0.5px solid purple;
+    color: blue;
+    background-color: lightblue;
+}
+.text-gray{
+    color: gray;
+}
+#visible{
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    padding: 4px;
+    cursor: pointer;
+}
+#visible:hover{
+    color: yellow;
+    transition: transform linear;
+}
+.leftSection-second p #myexp{
+    color: #FFF455;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: role;
+    animation-duration: 4s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: 2;
+}
+@keyframes role{
+    0%   {color:blueviolet; left:0px; top:0px; font-size:1rem; margin: 0px;}
+    25%  {color:blue; left:100px; top:0px; font-size: 1.5rem; margin: 5px;}
+    50%  {color:red; left:150px; top:120px; font-size: 1.8rem; margin: 10px;}
+    75%  {color:green; left:0px; top:150px; font-size: 2.2rem; margin: 15px;}
+    100% {color: #fff; left:0px; top:0px; font-size: 1rem; margin: 0px;}
+}
+footer{
+    background-color: #0e0e1a;
+}
+.footer{
+    display: flex;
+    padding: 23px 120px;
+    max-width: 100%;
+    justify-content: space-evenly;
+
+}
+.footer ul{
+    list-style: none;
+}
+.footer > div{
+    width: 223px;
+}
+footer .footer-rights{
+    text-align: center;
+    background: brown;
+    color: gray;
+    padding: 12px;
+
+}
+.footer-rights #movetoTop{
+    padding: 20px 0px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    width: 50px;
+    height: 30px;
+    pointer: cursor;
+}
+.footer-rights  a{
+    text-decoration: none;
+}
+.leftSection-second{
+    margin: 5px;
+    padding: 25px 0;
+}

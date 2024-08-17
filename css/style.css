@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@400;500&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #A0937D; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FF4E88;
+  border-radius: 8px;
+}
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -102,7 +121,7 @@ main hr{
 }
 .secondSection{
     width: 80vw;
-    height: 22vw;
+    height: 45vw;
     margin: 56px 0;
     display: flex;
     justify-content: center;
@@ -162,6 +181,27 @@ main hr{
     75%  {color:green; left:0px; top:150px; font-size: 2.2rem; margin: 15px;}
     100% {color: #fff; left:0px; top:0px; font-size: 1rem; margin: 0px;}
 }
+table{
+    margin: 4px;
+    width: 100%;
+    border: 1px solid lightblue;
+    border-radius: 70px 30px;
+    background-color: purple;
+    
+}
+table,th,tr,td{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+table:hover{
+    background: green;
+    font-size: 1.1rem;
+}
+.tble{
+    overflow: none;
+}
 footer{
     background-color: #0e0e1a;
 }
@@ -198,7 +238,110 @@ footer .footer-rights{
 .footer-rights  a{
     text-decoration: none;
 }
-.leftSection-second{
-    margin: 5px;
-    padding: 25px 0;
+
+/* Media Queries for Small and Very Small Devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        margin: 50px 0;
+    }
+
+    .firstSection > div {
+        width: 80%;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .secondSection {
+        width: 95%;
+        height: auto;
+    }
+
+    .leftSection-second h1 {
+        font-size: 1.5rem;
+    }
+
+    .leftSection-second p {
+        font-size: 0.9rem;
+    }
+    .tble{
+        overflow-X: auto;
+        width: 90%;
+    }
+
+    table {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftSection {
+        font-size: 1.5rem;
+    }
+
+    .firstSection > div {
+        width: 90%;
+    }
+
+    .leftSection-second h1 {
+        font-size: 1.2rem;
+    }
+
+    .leftSection-second p {
+        font-size: 0.8rem;
+    }
+    .secondSection {
+        width: auto;
+        height: auto;
+    }
+    .tble{
+        overflow-X: auto;
+        width: 80%;
+    }
+    table th, table td {
+        padding: 5px;
+        font-size: 0.8rem
+    }
+
+    .footer {
+        padding: 10px;
+    }
+
+    .footer-rights {
+        padding: 8px;
+    }
+
+    nav ul li a:hover {
+        font-size: 1rem;
+    }
+
+    #visible {
+        font-size: 0.9rem;
+    }
 }

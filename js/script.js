@@ -10,6 +10,8 @@ const visibility=document.getElementById("visible");
 const bdy=document.querySelector("body");
 const menu=document.querySelector("nav");
 const ftr=document.querySelector("footer");
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.getElementById('nav-menu');
 
 
 visibility.addEventListener("click",function(){
@@ -25,6 +27,7 @@ visibility.addEventListener("click",function(){
                 bdy.style.background="black";
                 bdy.style.color="white";
                 visibility.value="Light";
+                ftr.style.backgroundColor="black";
         }
 
 });

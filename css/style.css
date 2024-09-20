@@ -308,6 +308,10 @@ footer .footer-rights{
     .leftSection {
         font-size: 1.5rem;
     }
+  iframe{
+    width: 300px;
+    height: 160px;
+  }
 
     .firstSection > div {
         width: 90%;

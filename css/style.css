@@ -226,6 +226,10 @@ footer .footer-rights{
     padding: 12px;
 
 }
+iframe{ 
+  height: 500px;
+  width: 400px;
+}
 .footer-rights #movetoTop{
     padding: 20px 0px;
     background: transparent;
@@ -310,7 +314,7 @@ footer .footer-rights{
     }
   iframe{
     width: 200px;
-    height: 150px;
+    height: 100px;
   }
 
     .firstSection > div {

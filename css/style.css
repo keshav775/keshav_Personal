@@ -227,9 +227,9 @@ footer .footer-rights{
 
 }
 iframe{ 
-  height: 500px;
-  width: 400px;
-  margin: 10px 15px;
+    height: 400px;
+    width: 500px;
+    margin: 10px 100px;
 }
 .footer-rights #movetoTop{
     padding: 20px 0px;
@@ -313,11 +313,6 @@ iframe{
     .leftSection {
         font-size: 1.5rem;
     }
-  iframe{
-    width: 500px;
-    height: 400px;
-    margin: 10px;
-  }
 
     .firstSection > div {
         width: 90%;

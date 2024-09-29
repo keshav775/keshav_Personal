@@ -354,4 +354,9 @@ iframe{
         font-size: 0.9rem;
         margin-left: 7rem;
     }
+    iframe{
+        margin: 5px 5px;
+        width: 250px;
+        height: 200px;
+    }
 }
